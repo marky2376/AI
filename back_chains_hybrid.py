@@ -27,7 +27,7 @@ import ssl
 from pydantic import BaseModel
 from pydantic import Field
 from huggingface_hub import login
-login(token='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')
+login(token='hf_')
 import json
 import re
 from datetime import datetime
@@ -36,7 +36,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 # Define model ID and access token
 model_id = "meta-llama/Meta-Llama-3.1-8B-Instruct"
-#hf_auth = "<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>"
+#hf_auth = "<hf_>"
 hf_auth = os.environ.get('HF_TOKEN')
 os.environ['FFMPEG_BINARY'] = '/usr/bin/ffmpeg'
 os.environ['FFPROBE_BINARY'] = '/usr/bin/ffprobe'
